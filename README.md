@@ -2,11 +2,10 @@
 This is the code repository for the paper:
 > **3D CoCa: Contrastive Learners are 3D Captioners**
 >
-> [Ting Huang](https://github.com/HT0403), [Zeyu Zhang](https://steve-zeyu-zhang.github.io/), [Yemin Wang](https://github.com/Clare-1) and [Hao Tang](https://scholar.google.com/citations?user=9zJkeEMAAAAJ&hl=en)\*
+> [Ting Huang](https://github.com/HT0403)\*, [Zeyu Zhang](https://steve-zeyu-zhang.github.io/)\*†, [Yemin Wang](https://github.com/Clare-1)\* and [Hao Tang](https://scholar.google.com/citations?user=9zJkeEMAAAAJ&hl=en)\**
 >
-> \*Corresponding author
+> \*Equal contribution. †Project lead. \**Corresponding author
 >
-> <em><b>ACM MM 2025</b></em>
 >
 > **[[arXiv]]()** **[[Paper with Code]]()** **[[HF Paper]]()**
 
@@ -23,7 +22,7 @@ If you use any content of this repo for your work, please cite the following our
 ## Introduction
 3D captioning, which aims to describe the content of 3D scenes in natural language, remains highly challenging due to the inherent sparsity of point clouds and weak cross-modal alignment in existing methods. To address these challenges, we propose 3D CoCa, a novel unified framework that seamlessly combines contrastive vision-language learning with 3D caption generation in a single architecture. Our approach leverages a frozen CLIP vision-language backbone to provide rich semantic priors, a spatially-aware 3D scene encoder to capture geometric context, and a multi-modal decoder to generate descriptive captions. Unlike prior two-stage methods that rely on explicit object proposals, 3D CoCa jointly optimizes contrastive and captioning objectives in a shared feature space, eliminating the need for external detectors or handcrafted proposals. This joint training paradigm yields stronger spatial reasoning and richer semantic grounding by aligning 3D and textual representations. Extensive experiments on the ScanRefer and Nr3D benchmarks demonstrate that 3D CoCa significantly outperforms current state-of-the-arts by 10.2\% and 5.76\% in CIDEr@0.5IoU, respectively.
 
-![image](https://github.com/AIGeeksGroup/3DCoCa/blob/main/image1.png)
+<!-- ![image](https://github.com/AIGeeksGroup/3DCoCa/blob/main/image1.png)-->
 
 ## Environment Setup
 You can set up your own conda virtual environment by running the commands below.
