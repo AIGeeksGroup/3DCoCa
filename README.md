@@ -17,6 +17,12 @@ This is the code repository for the paper:
 
 If you use any content of this repo for your work, please cite the following our paper:
 ```
+@article{huang20253dCoCa,
+      title={3D CoCa: Contrastive Learners are 3D Captioners}, 
+      author={Ting Huang and Zeyu Zhang and Yemin Wang and Hao Tang},
+      year={2025},
+      journal={arXiv preprint arXiv:2504.09518}, 
+}
 ```
 
 ## Introduction
