@@ -7,7 +7,7 @@ This is the code repository for the paper:
 > \*Equal contribution. †Project lead. \**Corresponding author
 >
 >
-> **[[arXiv]](https://arxiv.org/abs/2504.09518)** **[[Paper with Code]]()** **[[HF Paper]]()**
+> **[[arXiv]](https://arxiv.org/abs/2504.09518)** **[[Paper with Code]](https://paperswithcode.com/paper/3d-coca-contrastive-learners-are-3d)** **[[HF Paper]](https://huggingface.co/papers/2504.09518)**
 
 <center class='img'>
 <img title="Conceptual homepage figure for 3D CoCa, highlighting its architecture (left) and performance (right). Left: The 3D CoCa model unifies contrastive learning and multimodal captioning in one framework. Right:Radar chart comparison of 3D CoCa and previous methods Scan2Cap~\cite{scan2cap_2021}, 3DJCG~\cite{3djcg2022}, 3D-VLP~\cite{3dvlp2024}, Vote2Cap-DETR~\cite{vote2cap2023}, Vote2Cap-DETR++~\cite{vote2cap++2024} on the ScanRefer~\cite{chen2020scanrefer} benchmark." src="https://github.com/AIGeeksGroup/3DCoCa/blob/main/image.png" width="100%">
