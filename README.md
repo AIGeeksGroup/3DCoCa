@@ -2,7 +2,7 @@
 This is the code repository for the paper:
 > **3D CoCa: Contrastive Learners are 3D Captioners**
 >
-> [Ting Huang](https://github.com/HT0403)\*, [Zeyu Zhang](https://steve-zeyu-zhang.github.io/)\*†, [Yemin Wang](https://github.com/Clare-1)\* and [Hao Tang](https://scholar.google.com/citations?user=9zJkeEMAAAAJ&hl=en)\**
+> [Ting Huang](https://github.com/Believeht029)\*, [Zeyu Zhang](https://steve-zeyu-zhang.github.io/)\*†, [Yemin Wang](https://github.com/Clare-1)\* and [Hao Tang](https://scholar.google.com/citations?user=9zJkeEMAAAAJ&hl=en)\**
 >
 > \*Equal contribution. †Project lead. \**Corresponding author
 >
