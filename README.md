@@ -11,9 +11,11 @@ This is the code repository for the paper:
 > 
 > [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/3d-coca-contrastive-learners-are-3d/3d-dense-captioning-on-scanrefer-dataset)](https://paperswithcode.com/sota/3d-dense-captioning-on-scanrefer-dataset?p=3d-coca-contrastive-learners-are-3d) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/3d-coca-contrastive-learners-are-3d/3d-dense-captioning-on-nr3d)](https://paperswithcode.com/sota/3d-dense-captioning-on-nr3d?p=3d-coca-contrastive-learners-are-3d)
 
-<center class='img'>
-<img title="Conceptual homepage figure for 3D CoCa, highlighting its architecture (left) and performance (right). Left: The 3D CoCa model unifies contrastive learning and multimodal captioning in one framework. Right:Radar chart comparison of 3D CoCa and previous methods Scan2Cap~\cite{scan2cap_2021}, 3DJCG~\cite{3djcg2022}, 3D-VLP~\cite{3dvlp2024}, Vote2Cap-DETR~\cite{vote2cap2023}, Vote2Cap-DETR++~\cite{vote2cap++2024} on the ScanRefer~\cite{chen2020scanrefer} benchmark." src="https://github.com/AIGeeksGroup/3DCoCa/blob/main/image.png" width="100%">
-</center>
+
+
+https://github.com/user-attachments/assets/25b4de43-8ee9-448c-9f44-c0c09cbe6ecb
+
+
 
 ## Citation
 
@@ -30,7 +32,9 @@ If you use any content of this repo for your work, please cite the following our
 ## Introduction
 3D captioning, which aims to describe the content of 3D scenes in natural language, remains highly challenging due to the inherent sparsity of point clouds and weak cross-modal alignment in existing methods. To address these challenges, we propose 3D CoCa, a novel unified framework that seamlessly combines contrastive vision-language learning with 3D caption generation in a single architecture. Our approach leverages a frozen CLIP vision-language backbone to provide rich semantic priors, a spatially-aware 3D scene encoder to capture geometric context, and a multi-modal decoder to generate descriptive captions. Unlike prior two-stage methods that rely on explicit object proposals, 3D CoCa jointly optimizes contrastive and captioning objectives in a shared feature space, eliminating the need for external detectors or handcrafted proposals. This joint training paradigm yields stronger spatial reasoning and richer semantic grounding by aligning 3D and textual representations. Extensive experiments on the ScanRefer and Nr3D benchmarks demonstrate that 3D CoCa significantly outperforms current state-of-the-arts by 10.2\% and 5.76\% in CIDEr&#8203;@0.5IoU, respectively.
 
-<!-- ![image](https://github.com/AIGeeksGroup/3DCoCa/blob/main/image1.png)-->
+<center class='img'>
+<img title="Conceptual homepage figure for 3D CoCa, highlighting its architecture (left) and performance (right). Left: The 3D CoCa model unifies contrastive learning and multimodal captioning in one framework. Right:Radar chart comparison of 3D CoCa and previous methods Scan2Cap~\cite{scan2cap_2021}, 3DJCG~\cite{3djcg2022}, 3D-VLP~\cite{3dvlp2024}, Vote2Cap-DETR~\cite{vote2cap2023}, Vote2Cap-DETR++~\cite{vote2cap++2024} on the ScanRefer~\cite{chen2020scanrefer} benchmark." src="https://github.com/AIGeeksGroup/3DCoCa/blob/main/image.png" width="100%">
+</center>
 
 ## Environment Setup
 You can set up your own conda virtual environment by running the commands below.
