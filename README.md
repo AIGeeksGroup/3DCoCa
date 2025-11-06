@@ -6,6 +6,7 @@ This is the code repository for the paper:
 >
 > \*Equal contribution. †Project lead. \**Corresponding author
 >
+> ***3DV 2026***
 >
 > **[[arXiv]](https://arxiv.org/abs/2504.09518)** **[[Models]](https://huggingface.co/AIGeeksGroup/3D-CoCa)** **[[HF Paper]](https://huggingface.co/papers/2504.09518)**
 > 
