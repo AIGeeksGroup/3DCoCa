@@ -11,10 +11,15 @@ from typing import Optional
 import torch
 from torch import Tensor, nn
 
-from models.detector_Vote2Cap_DETRv3.helpers import (
-    ACTIVATION_DICT, NORM_DICT, WEIGHT_INIT_DICT,
-    get_clones
-)
+try:
+    # Backwards-compat: some releases referenced Vote2Cap++ detector helpers.
+    from models.detector_Vote2Cap_DETRv3.helpers import (  # type: ignore
+        ACTIVATION_DICT, NORM_DICT, WEIGHT_INIT_DICT, get_clones
+    )
+except ModuleNotFoundError:
+    from .helpers import (
+        ACTIVATION_DICT, NORM_DICT, WEIGHT_INIT_DICT, get_clones
+    )
 
 
 class TransformerEncoder(nn.Module):
@@ -229,7 +234,6 @@ class TransformerEncoderLayer(nn.Module):
             self.dropout = nn.Dropout(dropout, inplace=False)
             self.linear2 = nn.Linear(dim_feedforward, d_model, bias=ffn_use_bias)
             self.norm2 = NORM_DICT[norm_name](d_model)
-            self.norm2 = NORM_DICT[norm_name](d_model)
             self.dropout2 = nn.Dropout(dropout, inplace=False)
 
         self.norm1 = NORM_DICT[norm_name](d_model)
@@ -252,8 +256,7 @@ class TransformerEncoderLayer(nn.Module):
         src2 = self.self_attn(q, k, value=value, attn_mask=src_mask,
                               key_padding_mask=src_key_padding_mask)[0]
         src = src + self.dropout1(src2)
-        if self.use_norm_fn_on_input:
-            src = self.norm1(src)
+        src = self.norm1(src)
         if self.use_ffn:
             src2 = self.linear2(self.dropout(self.activation(self.linear1(src))))
             src = src + self.dropout2(src2)

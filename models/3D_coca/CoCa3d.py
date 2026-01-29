@@ -12,15 +12,15 @@ from utils.pc_util import scale_points, shift_scale_points
 from datasets.scannet import BASE
 from typing import Dict
 
-from models.3D_coca.config import model_config
-from models.3D_coca.criterion import build_criterion
-from models.3D_coca.helpers import GenericMLP
+from .config import model_config
+from .criterion import build_criterion
+from .helpers import GenericMLP
 
-from models.3D_coca.vote_query import VoteQuery
+from .vote_query import VoteQuery
 
-from models.3D_coca.position_embedding import PositionEmbeddingCoordsSine
+from .position_embedding import PositionEmbeddingCoordsSine
 
-from models.3D_coca.transformer import (
+from .transformer import (
     MaskedTransformerEncoder, TransformerDecoder,
     TransformerDecoderLayer, TransformerEncoder,
     TransformerEncoderLayer)
@@ -29,7 +29,7 @@ from typing import Optional
 import MinkowskiEngine as ME
 from .epcl_detection import build_epcl
 
-from models.3D_coca.coca_pytorch import CoCa
+from .coca_pytorch import CoCa
 
 class BoxProcessor(object):
     """
