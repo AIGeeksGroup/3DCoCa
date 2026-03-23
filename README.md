@@ -91,3 +91,7 @@ python main.py --use_color --use_normal --test_ckpt ckpt/3DCoCa/checkpoint_best.
 # w/ 2D input
 python main.py --use_color --use_multiview --test_ckpt ckpt_2D/3DCoCa/checkpoint_best.pth --test_caption
 ```
+
+## Poster
+
+![image](./assets/poster.png)
