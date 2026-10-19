@@ -1,4 +1,9 @@
 # 3DCoCa
+
+> [!NOTE]
+> [**3D CoCa v2**](https://arxiv.org/abs/2601.06496) has been accepted to **IJCV 2026**! Contrastive learners with test-time search enable generalizable spatial intelligence. 🌍
+
+
 This is the code repository for the paper:
 > **3D CoCa: Contrastive Learners are 3D Captioners**
 >
